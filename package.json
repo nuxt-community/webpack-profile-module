@@ -1,12 +1,10 @@
 {
   "name": "@nuxtjs/webpack-profile",
-  "version": "0.0.0",
-  "description":
-    "Nuxt module to display webpack build progress steps with core ProgressPlugin",
+  "version": "0.1.0",
+  "description": "Nuxt module to display webpack build progress steps with core ProgressPlugin",
   "license": "MIT",
   "contributors": [
     {
-      "name": "qm3ster <qm3ster@gmail.com>",
       "name": "pooya parsa <pooya@pi0.ir>"
     }
   ],
@@ -20,13 +18,20 @@
     "test": "npm run lint && jest",
     "release": "standard-version && git push --follow-tags && npm publish"
   },
-  "eslintIgnore": ["lib/templates/*.*"],
-  "files": ["lib"],
+  "eslintIgnore": [
+    "lib/templates/*.*"
+  ],
+  "files": [
+    "lib"
+  ],
   "jest": {
     "testEnvironment": "node",
     "coverageDirectory": "./coverage/",
     "collectCoverage": true,
-    "collectCoverageFrom": ["lib", "test"]
+    "collectCoverageFrom": [
+      "lib",
+      "test"
+    ]
   },
   "dependencies": {},
   "devDependencies": {
