@@ -1,9 +1,9 @@
 # Webpack profile module for Nuxt.js
 [![npm (scoped with tag)](https://img.shields.io/npm/v/@nuxtjs/webpack-profile/latest.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/webpack-profile)
 [![npm](https://img.shields.io/npm/dt/@nuxtjs/webpack-profile.svg?style=flat-square)](https://npmjs.com/package/@nuxtjs/webpack-profile)
-[![CircleCI](https://img.shields.io/circleci/project/github/.svg?style=flat-square)](https://circleci.com/gh/)
-[![Codecov](https://img.shields.io/codecov/c/github/.svg?style=flat-square)](https://codecov.io/gh/)
-[![Dependencies](https://david-dm.org//status.svg?style=flat-square)](https://david-dm.org/)
+[![CircleCI](https://img.shields.io/circleci/project/github/nuxt-community/webpack-profile-module.svg?style=flat-square)](https://circleci.com/gh/nuxt-community/webpack-profile-module)
+[![Codecov](https://img.shields.io/codecov/c/github/nuxt-community/webpack-profile-module.svg?style=flat-square)](https://codecov.io/gh/nuxt-community/webpack-profile-module)
+[![Dependencies](https://david-dm.org/nuxt-community/webpack-profile-module/status.svg?style=flat-square)](https://david-dm.org/)
 [![js-standard-style](https://img.shields.io/badge/code_style-standard-brightgreen.svg?style=flat-square)](http://standardjs.com)
 
 > Nuxt module to display webpack build progress steps with core ProgressPlugin
@@ -66,4 +66,4 @@ Time: 34621ms
 
 [MIT License](./LICENSE)
 
-Copyright (c) qm3ster <qm3ster@gmail.com>
+Copyright (c) Nuxt Community
