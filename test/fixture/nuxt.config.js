@@ -8,7 +8,7 @@ module.exports = {
     [
       '@@',
       {
-        /* Module options */
+        enabled: true
       }
     ]
   ]

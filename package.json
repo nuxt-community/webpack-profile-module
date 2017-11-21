@@ -27,13 +27,11 @@
   "jest": {
     "testEnvironment": "node",
     "coverageDirectory": "./coverage/",
-    "collectCoverage": true,
-    "collectCoverageFrom": [
-      "lib",
-      "test"
-    ]
+    "collectCoverage": true
   },
-  "dependencies": {},
+  "dependencies": {
+    "std-mocks": "^1.0.1"
+  },
   "devDependencies": {
     "nuxt-module-builder": "latest"
   }

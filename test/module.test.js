@@ -3,34 +3,19 @@ process.env.PORT = process.env.PORT || 5060
 process.env.NODE_ENV = 'production'
 
 const {Nuxt, Builder} = require('nuxt')
-const request = require('request-promise-native')
+
+const stdMocks = require('std-mocks')
 
 const config = require('./fixture/nuxt.config')
 
-const url = path => `http://localhost:${process.env.PORT}${path}`
-const get = path => request(url(path))
-
 describe('Module', () => {
-  let nuxt
-
-  beforeAll(async () => {
-    config.modules.unshift(function () {
-      // Add test specific test only hooks on nuxt life cycle
-    })
-
-    // Build a fresh nuxt
-    nuxt = new Nuxt(config)
+  test('profile', async () => {
+    let nuxt = new Nuxt(config)
+    stdMocks.use()
     await new Builder(nuxt).build()
-    await nuxt.listen(process.env.PORT)
-  })
+    stdMocks.restore()
 
-  afterAll(async () => {
-    // Close all opened resources
-    await nuxt.close()
-  })
-
-  test('render', async () => {
-    let html = await get('/')
-    expect(html).toContain('Works!')
+    const output = stdMocks.flush().stderr.join('\r\n')
+    expect(output).toContain('additional chunk assets processing')
   })
 })
